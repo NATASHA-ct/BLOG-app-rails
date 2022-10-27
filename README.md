@@ -1,15 +1,13 @@
-# HELLO RAILS
-This is a simple rails project to practice initalizing a rails app and deploying it on rails server
+# Blog App
 
-- Create a new app called 'hellorails'.
-- Initialize your project with Git.
-- Make sure that your project has Postgres database set up.
-- Run rails server and visit http://localhost:3000/ in your browser!
+The Blog app is a classic example of a blog website. It is a fully functional website that will show the list of posts and empower readers to interact with them by adding comments and liking posts.
+
 ## Built With
 
 - Ruby
 - Rails
 - Postgresql
+- Linters
 
 ## Prerequisites
 
@@ -34,7 +32,7 @@ If you don't have Ruby, you can find a complete list of ways to install Ruby, in
 If you installed git you can clone the code to your machine, or download a ZIP of all the files directly.
 ```
 
-- Open the [Repository Link](https://github.com/NATASHA-ct/HELLO--RAILS.git) of this project in GitHub.
+- Open the [Repository Link](https://github.com/NATASHA-ct/BLOG-app-rails.git) of this project in GitHub.
 
 - Once the files are on your machine, open capstone-ruby folder in [Visual Studio Code](https://code.visualstudio.com/).
 
@@ -44,7 +42,7 @@ If you installed git you can clone the code to your machine, or download a ZIP o
 ### Install
  Start by cloning the repository.
  
-- https://github.com/NATASHA-ct/HELLO--RAILS.git
+- https://github.com/NATASHA-ct/BLOG-app-rails.git
 
   Navigate to the created folder.
 
