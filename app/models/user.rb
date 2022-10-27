@@ -6,5 +6,4 @@ class User < ApplicationRecord
   def most_recent_post
     post.order(created_at: DESC).limit(3)
   end
-
 end
