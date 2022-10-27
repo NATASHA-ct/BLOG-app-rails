@@ -1,6 +1,6 @@
 require 'rails_helper'
 
-RSpec.describe User , type: :model do
+RSpec.describe User, type: :model do
   before(:all) do
     @user = User.create(
       name: 'Tascha',
@@ -15,11 +15,11 @@ RSpec.describe User , type: :model do
       likes_counter: 1,
       author_id: @user.id
     )
- end
- it '@post created should be valid' do
+  end
+  it '@post created should be valid' do
     expect(@post).to be_valid
   end
-it '@Title must not be blank' do
+  it '@Title must not be blank' do
     @post.title = 'Programming school at Microverse is awesome'
     expect(@post).to be_valid
   end
@@ -35,5 +35,4 @@ it '@Title must not be blank' do
     @post.likes_counter = 1
     expect(@post).to be_valid
   end
-
 end
