@@ -14,6 +14,7 @@ RSpec.describe Post, type: :model do
       post_id: 1
     )
   end
+  
   it '@comments created should be valid' do
     expect(@comment).to be_valid
   end
