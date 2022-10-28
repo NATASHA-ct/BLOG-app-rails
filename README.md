@@ -65,9 +65,7 @@ If you installed git you can clone the code to your machine, or download a ZIP o
   ```
 
 ### Quick view of the project
-<img width="934" alt="Screenshot 2022-10-26 151428" src="https://user-images.githubusercontent.com/106079814/198031531-bf155fe3-f2f3-43b9-b4fb-249fbc66dd18.png">
-<img width="180" alt="Screenshot 2022-10-26 152653" src="https://user-images.githubusercontent.com/106079814/198031596-7eeef064-c3aa-484a-96ac-9c135114b70e.png">
-
+To be updated .............
 
 ## Authors
 👤 **Natasha Tatenda Chirombe**
