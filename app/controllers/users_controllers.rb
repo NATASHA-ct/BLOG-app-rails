@@ -1,5 +1,7 @@
 class UsersControllers < ApplicationController
-  def Index
+  def index; end
+
+  def show
     params[:users_id]
   end
 end
