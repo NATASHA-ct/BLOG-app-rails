@@ -43,6 +43,9 @@ gem 'tzinfo-data'
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', require: false
 
+# gem for coverage
+gem 'simplecov', require: false, group: :true
+
 # Use Sass to process CSS
 # gem "sassc-rails"
 
@@ -54,6 +57,7 @@ group :development, :test do
   gem 'debug', platforms: %i[mri mingw x64_mingw]
   gem 'ffi'
   gem 'rspec-rails'
+  gem 'rails-controller-testing'
 end
 
 group :development do
