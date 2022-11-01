@@ -33,4 +33,3 @@ RSpec.describe 'Users', type: %w[request feature] do
     expect(page).to have_text('USER DETAIL PAGE')
   end
 end
- 
