@@ -44,7 +44,7 @@ gem 'tzinfo-data'
 gem 'bootsnap', require: false
 
 # gem for coverage
-gem 'simplecov', require: false, group: true
+gem 'simplecov', require: false, group: :true
 
 # Use Sass to process CSS
 # gem "sassc-rails"
