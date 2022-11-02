@@ -14,7 +14,7 @@
       <img src="./assets/0.12.3/loading.gif" alt="loading"/>
     </div>
     <div id="wrapper" class="hide">
-      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-01T15:27:45+02:00">2022-11-01T15:27:45+02:00</abbr></div>
+      <div class="timestamp">Generated <abbr class="timeago" title="2022-11-01T17:20:52+02:00">2022-11-01T17:20:52+02:00</abbr></div>
       <ul class="group_tabs"></ul>
 
       <div id="content">
@@ -23,14 +23,14 @@
     <span class="group_name">All Files</span>
     (<span class="covered_percent">
       <span class="green">
-  96.77%
+  96.79%
 </span>
 
      </span>
      covered at
      <span class="covered_strength">
        <span class="green">
-         1.04
+         1.05
        </span>
     </span> hits/line
     )
@@ -43,11 +43,11 @@
   </div>
 
   <div class="t-line-summary">
-    <b>186</b> relevant lines,
-    <span class="green"><b>180</b> lines covered</span> and
+    <b>187</b> relevant lines,
+    <span class="green"><b>181</b> lines covered</span> and
     <span class="red"><b>6</b> lines missed. </span>
     (<span class="green">
-  96.77%
+  96.79%
 </span>
 )
   </div>
@@ -95,11 +95,11 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#f8445be042c078bfd0e2d2cc0cae6c4749b6ec48" class="src_link" title="app/controllers/users_controller.rb">app/controllers/users_controller.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">7</td>
-            <td class="cell--number">4</td>
-            <td class="cell--number">4</td>
+            <td class="cell--number">9</td>
+            <td class="cell--number">5</td>
+            <td class="cell--number">5</td>
             <td class="cell--number">0</td>
-            <td class="cell--number">1.25</td>
+            <td class="cell--number">1.40</td>
             
           </tr>
         
@@ -282,7 +282,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#c89d8197f3178a2101005913af0ed181719a85e4" class="src_link" title="spec/controllers/posts_controller_spec.rb">spec/controllers/posts_controller_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">38</td>
+            <td class="cell--number">35</td>
             <td class="cell--number">19</td>
             <td class="cell--number">19</td>
             <td class="cell--number">0</td>
@@ -293,7 +293,7 @@
           <tr class="t-file">
             <td class="strong t-file__name"><a href="#5cd0ac306d639ad5f51f9e467ddcb3cb40d366c0" class="src_link" title="spec/controllers/users_controller_spec.rb">spec/controllers/users_controller_spec.rb</a></td>
             <td class="green strong cell--number t-file__coverage">100.00 %</td>
-            <td class="cell--number">36</td>
+            <td class="cell--number">35</td>
             <td class="cell--number">19</td>
             <td class="cell--number">19</td>
             <td class="cell--number">0</td>
@@ -548,8 +548,8 @@
     
 
     <div class="t-line-summary">
-      <b>4</b> relevant lines.
-      <span class="green"><b>4</b> lines covered</span> and
+      <b>5</b> relevant lines.
+      <span class="green"><b>5</b> lines covered</span> and
       <span class="red"><b>0</b> lines missed.</span>
     </div>
 
@@ -578,45 +578,23 @@
 
             
 
-            <code class="ruby">  def index; end</code>
+            <code class="ruby">  def index</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="3">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="1" data-linenumber="4">
-            <span class="hits">1</span>
-            
-
-            
-
-            <code class="ruby">  def show</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="covered" data-hits="2" data-linenumber="5">
+          <li class="covered" data-hits="2" data-linenumber="3">
             <span class="hits">2</span>
             
 
             
 
-            <code class="ruby">   @users_id = params[:users_id]</code>
+            <code class="ruby">    @users = User.all</code>
           </li>
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="6">
+          <li class="never" data-hits="" data-linenumber="4">
             
             
 
@@ -627,7 +605,51 @@
         </div>
       
         <div>
-          <li class="never" data-hits="" data-linenumber="7">
+          <li class="never" data-hits="" data-linenumber="5">
+            
+            
+
+            
+
+            <code class="ruby"></code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="1" data-linenumber="6">
+            <span class="hits">1</span>
+            
+
+            
+
+            <code class="ruby">  def show</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="covered" data-hits="2" data-linenumber="7">
+            <span class="hits">2</span>
+            
+
+            
+
+            <code class="ruby">    @users_id = params[:users_id]</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="8">
+            
+            
+
+            
+
+            <code class="ruby">  end</code>
+          </li>
+        </div>
+      
+        <div>
+          <li class="never" data-hits="" data-linenumber="9">
             
             
 
@@ -3679,7 +3701,7 @@
 
             
 
-            <code class="ruby">   end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3701,7 +3723,7 @@
 
             
 
-            <code class="ruby">    it &#39;renders the correct posts page&#39; do</code>
+            <code class="ruby">  it &#39;renders the correct posts page&#39; do</code>
           </li>
         </div>
       
@@ -3712,7 +3734,7 @@
 
             
 
-            <code class="ruby">        get &#39;/users/1/posts&#39;</code>
+            <code class="ruby">    get &#39;/users/1/posts&#39;</code>
           </li>
         </div>
       
@@ -3723,7 +3745,7 @@
 
             
 
-            <code class="ruby">        expect(response.status).to eq(200)</code>
+            <code class="ruby">    expect(response.status).to eq(200)</code>
           </li>
         </div>
       
@@ -3734,7 +3756,7 @@
 
             
 
-            <code class="ruby">        expect(response).to render_template(&#39;index&#39;)</code>
+            <code class="ruby">    expect(response).to render_template(&#39;index&#39;)</code>
           </li>
         </div>
       
@@ -3745,7 +3767,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3767,7 +3789,7 @@
 
             
 
-            <code class="ruby">    it &#39;renders the correct single post page&#39; do</code>
+            <code class="ruby">  it &#39;renders the correct single post page&#39; do</code>
           </li>
         </div>
       
@@ -3778,7 +3800,7 @@
 
             
 
-            <code class="ruby">        get &#39;/users/1/posts/1&#39;</code>
+            <code class="ruby">    get &#39;/users/1/posts/1&#39;</code>
           </li>
         </div>
       
@@ -3789,7 +3811,7 @@
 
             
 
-            <code class="ruby">        expect(response.status).to eq(200)</code>
+            <code class="ruby">    expect(response.status).to eq(200)</code>
           </li>
         </div>
       
@@ -3800,7 +3822,7 @@
 
             
 
-            <code class="ruby">        expect(response).to render_template(&#39;show&#39;)</code>
+            <code class="ruby">    expect(response).to render_template(&#39;show&#39;)</code>
           </li>
         </div>
       
@@ -3811,7 +3833,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3833,7 +3855,7 @@
 
             
 
-            <code class="ruby">    it &#39;renders index template with right text&#39; do</code>
+            <code class="ruby">  it &#39;renders index template with right text&#39; do</code>
           </li>
         </div>
       
@@ -3844,7 +3866,7 @@
 
             
 
-            <code class="ruby">        visit &#39;/users/1/posts/&#39;</code>
+            <code class="ruby">    visit &#39;/users/1/posts/&#39;</code>
           </li>
         </div>
       
@@ -3855,7 +3877,7 @@
 
             
 
-            <code class="ruby">        expect(page).to have_text(&#39;POST LIST PAGE&#39;)</code>
+            <code class="ruby">    expect(page).to have_text(&#39;POST LIST PAGE&#39;)</code>
           </li>
         </div>
       
@@ -3866,7 +3888,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3888,7 +3910,7 @@
 
             
 
-            <code class="ruby">    it &#39;renders show template with right text&#39; do</code>
+            <code class="ruby">  it &#39;renders show template with right text&#39; do</code>
           </li>
         </div>
       
@@ -3899,7 +3921,7 @@
 
             
 
-            <code class="ruby">        visit &#39;/users/1/posts/1&#39;</code>
+            <code class="ruby">    visit &#39;/users/1/posts/1&#39;</code>
           </li>
         </div>
       
@@ -3910,7 +3932,7 @@
 
             
 
-            <code class="ruby">        expect(page).to have_text(&#39;Single Post View&#39;)</code>
+            <code class="ruby">    expect(page).to have_text(&#39;Single Post View&#39;)</code>
           </li>
         </div>
       
@@ -3921,7 +3943,7 @@
 
             
 
-            <code class="ruby">    end</code>
+            <code class="ruby">  end</code>
           </li>
         </div>
       
@@ -3932,40 +3954,7 @@
 
             
 
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="36">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="37">
-            
-            
-
-            
-
-            <code class="ruby"></code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="38">
-            
-            
-
-            
-
-            <code class="ruby">  end</code>
+            <code class="ruby">end</code>
           </li>
         </div>
       
@@ -4382,17 +4371,6 @@
             
 
             <code class="ruby">end</code>
-          </li>
-        </div>
-      
-        <div>
-          <li class="never" data-hits="" data-linenumber="36">
-            
-            
-
-            
-
-            <code class="ruby"> </code>
           </li>
         </div>
       
@@ -5638,7 +5616,7 @@
 
             
 
-            <code class="ruby">   photo: &#39;https://unsplash.com/photos/F_-0BxGuVvo&#39;,</code>
+            <code class="ruby">                     photo: &#39;https://unsplash.com/photos/F_-0BxGuVvo&#39;,</code>
           </li>
         </div>
       
@@ -5649,7 +5627,7 @@
 
             
 
-            <code class="ruby">   bio: &#39;Im a rich and wise young lady&#39;, post_counter: 1)</code>
+            <code class="ruby">                     bio: &#39;Im a rich and wise young lady&#39;, post_counter: 1)</code>
           </li>
         </div>
       
