@@ -2,10 +2,10 @@
 
 
 <div>
-  <img src="<%= user.photo %>" alt="user photo">
+  <img src="<%= @user.photo %>" alt="userphoto">
     <span>
-      <h2><%= user.name %><h2>
-      <p>Number of post:<%= user.post_counter %></p>
+      <h2><%= @user.name %><h2>
+      <p>Number of post:<%= @user.post_counter %></p>
     </span>
 </div>
 
@@ -22,6 +22,11 @@
         <p><%= post.text %></p>
         <p>Comments: <%= post.comments_counter %>,Likes: <%= post.likes_counter %> </p>
       </div>
+      
     <% end %>
   
+<% end %>
+
+<%= link_to user_posts_path(@user) do %>
+      <button type="button">See all posts</button>
 <% end %>
