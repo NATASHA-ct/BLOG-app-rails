@@ -7,15 +7,12 @@
         <img src="<%= user.photo %>" alt="user photo">
        <% end %>
 
-       
-      <span>
+       <span>
          <%= link_to user_path(user.id) do %>
          <span> <%= user.name %> </span>
          <% end %>
-
          <span>Number of post:<%= user.post_counter %></span>
       </span>
-
     </div>
    <% end %>
     
