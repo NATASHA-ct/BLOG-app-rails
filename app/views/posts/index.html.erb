@@ -1,1 +1,30 @@
 <h1>POST LIST PAGE<h1>
+
+<div>
+  <img src="<%= @user.photo %>" alt="userphoto">
+    <span>
+      <h2><%= @user.name %><h2>
+      <p>Number of post:<%= @user.post_counter %></p>
+    </span>
+</div>
+
+
+<div>
+   <% @posts.each do |post|%> 
+    <div>
+       <%= link_to user_post_path(post.author, post) do %>
+      <div>
+        <h2>Post #<%= post.id %></h2>
+        <h3><%= post.title %></h3>
+        <p><%= post.text %></p>
+        <p>Comments: <%= post.comments_counter %>,Likes: <%= post.likes_counter %> </p>
+      </div>   
+    <% end %>
+    <% post.recent_comments.each do |comment| %>
+     <div>
+        <p><%=comment.author.name %>: Comment <%= comment.id %>   <%=comment.text %></p>
+      </div>
+   <% end %>
+</div>
+<% end %>
+<button>Pagination</button>

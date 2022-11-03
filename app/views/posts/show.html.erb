@@ -1,1 +1,16 @@
 <h1>Single Post View</h1>
+
+<div>
+   <h2>Post #<%= @post.id %> by </h2>
+   <p>Number of Comments: <%= @post.comments_counter || 0 %>,Number of Likes: <%= @post.likes_counter || 0 %> </p>
+   <h3><%= @post.title %></h3>
+   <p><%= @post.text %></p>
+</div>
+
+
+<% @comments.each do |comment| %>
+     <div>
+        <p><%=comment.author.name %>: Comment <%= comment.id %>  <%=comment.text %></p>
+      </div>
+  
+<% end %>

@@ -1,1 +1,19 @@
 <h1>USER LIST PAGE<h1>
+
+<div>
+   <% @users.each do |user|%> 
+    <div>
+       <%= link_to user_path(user.id) do %>
+        <img src="<%= user.photo %>" alt="user photo">
+       <% end %>
+
+       <span>
+         <%= link_to user_path(user.id) do %>
+         <span> <%= user.name %> </span>
+         <% end %>
+         <span>Number of post:<%= user.post_counter %></span>
+      </span>
+    </div>
+   <% end %>
+    
+</div>
