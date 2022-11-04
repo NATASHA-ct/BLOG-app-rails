@@ -8,7 +8,7 @@ class PostsController < ApplicationController
     @post = Post.new
   end
 
-  def create 
+  def create
     @post = Post.new(post_params)
     @author = current_user
     @post.author = @author
@@ -21,18 +21,16 @@ class PostsController < ApplicationController
     end
   end
 
-   def show
+  def show
     @user = User.find(params[:user_id])
     @post = Post.find(params[:id])
     @comments = @post.comments
-    
   end
 
   private
 
-  #strong parameters
+  # strong parameters
   def post_params
     params.require(:post).permit(:title, :text)
   end
-
 end

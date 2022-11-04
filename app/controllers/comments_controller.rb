@@ -11,12 +11,13 @@ class CommentsController < ApplicationController
       render :new
     end
   end
-  
+
   def new
     @comment = Comment.new
   end
 
   private
+
   def post_params
     params.require(:comment).permit(:text)
   end
