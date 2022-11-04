@@ -3,8 +3,11 @@ class Post < ApplicationRecord
   has_many :comments
   has_many :likes
 
+  after_save :update_post_counter
+
   def update_post_counter
     author.increment!(:post_counter)
+    author.update(posts_counter: author.posts.count)
   end
 
   validates :title, presence: true, length: { maximum: 250 }
