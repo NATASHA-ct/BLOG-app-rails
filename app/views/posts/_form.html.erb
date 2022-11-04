@@ -1,4 +1,4 @@
-<%= form_with model: Post, url: user_posts_path, class: "form-create" do |pp| %>
+<%= form_with model: Post, url: user_posts_path, class: "form-create" do |form| %>
 
 <% if @post.errors.any? %>
  <h2>The following errors prevented the article from saving:</h2>
@@ -11,17 +11,17 @@
 
 
 <p>
-    <%= pp.label :title %>
-    <%= pp.text_field :title %>
+    <%= form.label :title %>
+    <%= form.text_field :title %>
 </p>
 
 <p>
-    <%= pp.label :text %>
-    <%= pp.text_area :text  %>
+    <%= form.label :text %>
+    <%= form.text_area :text  %>
 </p>
 
 <p>
-    <%= pp.submit "submit", class: "submit-btn"%>
+    <%= form.submit "submit", class: "submit-btn"%>
 </p>
 
 <%end%>

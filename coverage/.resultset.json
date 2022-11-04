@@ -312,6 +312,9 @@
           1,
           1,
           1,
+          1,
+          1,
+          1,
           null,
           null
         ]
@@ -406,6 +409,9 @@
         "lines": [
           1,
           1,
+          null,
+          1,
+          null,
           null
         ]
       },
@@ -505,16 +511,17 @@
           1,
           1,
           1,
-          1,
-          0,
-          null,
-          null,
-          1,
-          1,
-          1,
           null,
           1,
           0,
+          null,
+          null,
+          1,
+          1,
+          1,
+          null,
+          1,
+          66,
           null,
           null
         ]
@@ -564,7 +571,7 @@
           1,
           null,
           1,
-          0,
+          2,
           null,
           null
         ]
@@ -573,9 +580,38 @@
         "lines": [
           1,
           1,
+          2,
+          2,
+          null,
           null,
           1,
           2,
+          2,
+          null,
+          null,
+          1,
+          0,
+          null,
+          null,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          null,
+          0,
+          0,
+          null,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          0,
+          null,
           null,
           null
         ]
@@ -583,6 +619,9 @@
       "C:/Users/User/Desktop/Rails/BLOG-app-rails/app/controllers/application_controller.rb": {
         "lines": [
           1,
+          1,
+          0,
+          null,
           null
         ]
       },
@@ -595,11 +634,12 @@
           null,
           1,
           2,
+          2,
           null,
           null
         ]
       }
     },
-    "timestamp": 1667316052
+    "timestamp": 1667595556
   }
 }
