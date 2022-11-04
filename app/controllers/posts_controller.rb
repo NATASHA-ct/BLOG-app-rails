@@ -4,11 +4,6 @@ class PostsController < ApplicationController
     @user = User.includes(posts: [:comments]).find(params[:user_id].to_i)
   end
 
-  def show
-    @post = Post.find(params[:id])
-    @comments = @post.comments
-  end
-
   def new
     @post = Post.new
   end
@@ -24,6 +19,13 @@ class PostsController < ApplicationController
       flash[:error] = 'Error:  Post was not created!!'
       render :new
     end
+  end
+
+   def show
+    @user = User.find(params[:user_id])
+    @post = Post.find(params[:id])
+    @comments = @post.comments
+    
   end
 
   private
