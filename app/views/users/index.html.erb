@@ -1,7 +1,7 @@
 <h1>USER LIST PAGE<h1>
 
 <div>
-   <% @users.includes([:posts]).each do |user|%> 
+   <% @users.each do |user|%> 
     <div>
        <%= link_to user_path(user.id) do %>
         <img src="<%= user.photo %>" alt="user photo">
