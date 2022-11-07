@@ -1,12 +1,14 @@
 <%= form_with model: Post, url: user_posts_path, class: "form-create" do |form_post| %>
-
+<%# remote:true to enable ajax/xhm...no need to refresh the page to see changes %>
 <% if @post.errors.any? %>
- <h2>The following errors prevented the article from saving:</h2>
+ <p>The following errors prevented the article from saving:</p>
  <ul>
  <% @post.errors.full_messages.each do |msg|%>
  <li><%= msg %></li>
  <% end %>
  </ul>
+ <% else %>
+   <p>Your post was created successfully</p>
 <% end %>
 
 
