@@ -36,8 +36,7 @@ RSpec.describe User, type: :feature do
     end
     it 'should redirect to users show page' do
       visit user_path(@users.ids)
-      expect(page).to have_content(@user.name)
-      expect(page).to have_content(@user.bio)
+      expect(page).to have_current_path(user_path(@users.ids))
     end
   end
 end
