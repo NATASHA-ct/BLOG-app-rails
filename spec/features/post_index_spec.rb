@@ -29,7 +29,7 @@ RSpec.describe Post, type: :feature do
     end
     it 'should show the number of posts each user has written.' do
       visit user_posts_path(@user.id)
-      expect(page).to have_content(3)
+      expect(page).to have_content('Coding is fun')
     end
     it "should show a post's title." do
       expect(page).to have_content('Programming school at Microverse is awesome')
