@@ -46,5 +46,12 @@ RSpec.describe Post, type: :feature do
     it 'should show how many likes a post has.' do
       expect(page).to have_content(@post.likes_counter)
     end
+
+    it 'should see a section for pagination if there are more posts than fit on the view.' do
+      expect(page).to have_content('Pagination')
+    end
+    # it 'should click on a post, it redirects me to that posts show page.' do
+    #   expect(page).to have_content(@post.likes_counter)
+    # end
   end
 end
