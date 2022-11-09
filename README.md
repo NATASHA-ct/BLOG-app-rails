@@ -62,8 +62,11 @@ If you installed git you can clone the code to your machine, or download a ZIP o
   - rails db:create
   - rails generate controller **foldername filename*8
   - rails generate model
-  ```
-
+  
+### Testing with Rspec and Capybara
+  - In your terminal run > 
+     bundle exec rspec
+```
 ### Quick view of the project
 To be updated .............
 
@@ -73,6 +76,12 @@ To be updated .............
 - GitHub: [@NATASHA-ct]((https://github.com/NATASHA-ct)
 - Twitter: [@NatashaChirombe]
 - LinkedIn: [Natasha Chirombe](linkedin.com/in/natasha-chirombe-1531aa17b)
+
+👤 **Karla Delgado** (Contributor) 
+
+- GitHub: [@karlavdelgadof](https://github.com/karlavdelgadof)
+- Twitter: [@karlavdelgadof](https://twitter.com/karlavdelgadof)
+- LinkedIn: [Karla Delgado](https://www.linkedin.com/in/karla-delgado-613a32239/)
 
 ## 🤝 Contributing
 
