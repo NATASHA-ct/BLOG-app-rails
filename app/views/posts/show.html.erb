@@ -1,7 +1,7 @@
 <h1>Single Post View</h1>
 
 <div>
-   <h2>Post #<%= @post.id %> by </h2>
+   <h2>Post #<%= @post.id %> by <%= @user.name%> </h2>
    <p>Number of Comments: <%= @post.comments_counter || 0 %>,Number of Likes: <%= @post.likes_counter || 0 %> </p>
    <h3><%= @post.title %></h3>
    <p><%= @post.text %></p>
