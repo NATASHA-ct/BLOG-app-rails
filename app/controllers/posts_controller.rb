@@ -2,7 +2,6 @@ class PostsController < ApplicationController
   def index
     @user = User.find(params[:user_id].to_i)
     @posts = @user.posts.includes([:author])
-
   end
 
   def new
@@ -12,9 +11,9 @@ class PostsController < ApplicationController
   end
 
   def create
-    post = post = Post.new(title: post_params[:title], text: post_params[:text], author: current_admin)
+    post = Post.new(title: post_params[:title], text: post_params[:text], author: current_admin)
     @author = post.author
-    
+
     if post.save
       redirect_to new_user_post_path(@author.id), message: 'Post was successfully created'
     else
