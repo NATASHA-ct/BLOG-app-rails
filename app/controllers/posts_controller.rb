@@ -5,16 +5,17 @@ class PostsController < ApplicationController
   end
 
   def new
+    @id = current_admin.id
     @post = Post.new
+    @id = current_admin.id
   end
 
   def create
-    @post = Post.new(post_params)
-    @author = current_user
-    @post.author = @author
-    if @post.save
-      flash[:success] = 'Post was successfully created'
-      redirect_to new_user_post_path(@author.id), notice: ''
+    post = Post.new(title: post_params[:title], text: post_params[:text], author: current_admin)
+    @author = post.author
+
+    if post.save
+      redirect_to new_user_post_path(@author.id), message: 'Post was successfully created'
     else
       flash[:error] = 'Error:  Post was not created!!'
       render :new
