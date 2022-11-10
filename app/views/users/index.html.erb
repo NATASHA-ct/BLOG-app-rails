@@ -1,5 +1,13 @@
 <h1>USER LIST PAGE<h1>
 
+<div class="nav">
+    <%if admin_signed_in? %>
+      <%= button_to "Sign Out", destroy_admin_session_path, method: :delete %>
+    <% else %>
+      <%= link_to "Sign In",  new_admin_session_path %>
+    <% end %>
+</div>
+
 <div>
    <% @users.each do |user|%> 
     <div>
